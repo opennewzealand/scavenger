@@ -1,5 +1,7 @@
 <% @dataset_entities.each do |entity| -%>
-  <p><%= h entity.name %></p>
-  <p>Source url: <%= h entity.url %></p>
-  <p><%= link_to 'Show', dataset_entity_url(entity) %></p>
+  <h2><%= link_to h(entity.name), dataset_entity_url(entity) %></h2>
+  <p>
+    Source url: <%= h entity.url %>
+    <%= link_to h(entity.name), dataset_entity_url(entity) %>
+  </p>
 <% end -%>
