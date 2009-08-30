@@ -1,6 +1,16 @@
 require 'open-uri'
 
 namespace :dataset do
+
+
+# TODO add rake task to add fields
+#FIELDS = {
+#    "name" => "#mainSectionContentArea table h3",
+#    "address" => "#mainSectionContentArea table tr:nth-of-type(1) td:nth-of-type(1)",
+#    "grade" => "#mainSectionContentArea table h1",
+#    "last_inspection_data" => "#mainSectionContentArea table tr:nth-of-type(3) td:nth-of-type(1)",
+#}  
+
   desc "Index: Auckland City Food Ratings"
   task :auckland => :environment do
     auckland_dataset = Dataset.find_or_create_by_name(:name => "Auckland City Food Grading", 
@@ -15,9 +25,10 @@ namespace :dataset do
     
     base_search_url = "http://www.aucklandcity.govt.nz/council/services/foodsearch/"
     page_urls = []
-    suburbs[0..0].each{|s| 
+    suburbs.each{|s| 
       puts s
       s_url = base_search_url + "default.asp?status=go&pSuburb=" + CGI::escape(s)
+      page_urls << s_url
       s_doc = Hpricot(open(s_url))
       pages = (s_doc/"td.pageNumbers a").each{ |pageHref|
         p_url = base_search_url + pageHref['href']
@@ -27,7 +38,7 @@ namespace :dataset do
     puts "Got #{page_urls.length} pages of data to grab"
 
     now = Time.now
-    page_urls[0..2].each do |p_url|
+    page_urls.each do |p_url|
       puts p_url
       p_doc = Hpricot(open(p_url))
       

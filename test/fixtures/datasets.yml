@@ -1,5 +1,5 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 auckland:
-  name: Auckland Food Ratings
-  url: http://www.aucklandcity.govt.nz
+  name: Auckland City Food Grading
+  url: http://www.aucklandcity.govt.nz/council/services/foodpremise/default.asp

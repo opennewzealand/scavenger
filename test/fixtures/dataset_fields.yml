@@ -10,16 +10,16 @@ auckland_rating_address:
   name: address
   css: "#mainSectionContentArea table tr:nth-of-type(1) td:nth-of-type(1)"
   data_type: text
-  dataset_id: 1
+  dataset: auckland
 
 auckland_rating_rating:
   name: grade
   css: "#mainSectionContentArea table h1"
   data_type: string
-  dataset_id: 1
+  dataset: auckland
   
 auckland_rating_inspection_date:
   name: last_inspection_date
   css: "#mainSectionContentArea table tr:nth-of-type(3) td:nth-of-type(1)"
   data_type: date
-  dataset_id: 1
+  dataset: auckland
