@@ -15,6 +15,6 @@ class DatasetEntity < ActiveRecord::Base
     end
     puts data.inspect 
     
-    data   
+    data.to_json  
   end
 end
