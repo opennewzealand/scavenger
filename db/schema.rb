@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090830010250) do
+ActiveRecord::Schema.define(:version => 20090830011322) do
 
   create_table "dataset_datas", :force => true do |t|
     t.string   "value"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(:version => 20090830010250) do
     t.integer  "dataset_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "url"
   end
 
   create_table "dataset_fields", :force => true do |t|

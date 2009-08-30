@@ -1,4 +1,6 @@
+Try this out with Auckland food ratings
+
 dataset -> url
-scraper, who, 
-specific dataset fields
+scraper, who,
+url, specific dataset fields, css to get to the field
 
