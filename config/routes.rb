@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :dataset_datas
+
+  map.resources :dataset_fields
+
+  map.resources :datasets
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
