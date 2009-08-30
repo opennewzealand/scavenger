@@ -1,13 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  css: MyText
-  data_type: MyString
-  dataset_id: 1
+auckland_rating_address:
+  name: address
+  css: address_css
+  data_type: text
+  dataset: auckland
 
-two:
-  name: MyString
-  css: MyText
-  data_type: MyString
-  dataset_id: 1
+auckland_rating_rating:
+  name: rating
+  css: rating_cs
+  data_type: string
+  dataset: auckland

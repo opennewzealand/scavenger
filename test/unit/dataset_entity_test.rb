@@ -5,4 +5,11 @@ class DatasetEntityTest < ActiveSupport::TestCase
   test "the truth" do
     assert true
   end
+  
+  test "restaurant entity is sane" do
+    restaurant = dataset_entities(:some_restaurant)
+    dataset = datasets(:auckland)
+    assert_equal dataset, restaurant.dataset
+  end
 end
+

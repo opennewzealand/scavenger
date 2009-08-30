@@ -1,9 +1,5 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  url: MyText
-
-two:
-  name: MyString
-  url: MyText
+auckland:
+  name: Auckland Food Ratings
+  url: http://www.aucklandcity.govt.nz

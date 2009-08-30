@@ -1,11 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  value: MyString
-  dataset_id: 1
-  dataset_field_id: 1
+some_restaurant_address:
+  value: 100 Queen Street, Auckland
+  dataset: auckland
+  dataset_entity: some_restaurant
+  dataset_field: auckland_rating_address
 
-two:
-  value: MyString
-  dataset_id: 1
-  dataset_field_id: 1
+some_restaurant_rating:
+  value: A
+  dataset: auckland
+  dataset_entity: some_restaurant
+  dataset_field: auckland_rating_address

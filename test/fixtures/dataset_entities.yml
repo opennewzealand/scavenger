@@ -1,9 +1,6 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  name: MyString
-  dataset_id: 1
-
-two:
-  name: MyString
-  dataset_id: 1
+some_restaurant:
+  name: Some Restaurant 
+  dataset: auckland
+  url: http://www.aucklandcity.govt.nz/ratings/28823
