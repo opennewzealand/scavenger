@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :dataset_entities
+
   map.resources :dataset_datas
 
   map.resources :dataset_fields
