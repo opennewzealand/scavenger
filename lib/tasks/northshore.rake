@@ -1,3 +1,12 @@
+FIELDS = {
+   "name" => "table.details tr:nth-of-type(0) td:nth-of-type(0)",
+   "address" => "table.details tr:nth-of-type(1) td:nth-of-type(0)",
+   "grade" => "table.details tr:nth-of-type(2) td:nth-of-type(0)",
+   "grade_description" => "table.details tr:nth-of-type(3) td:nth-of-type(0)",
+   "last_inspection_date" => "table.details tr:nth-of-type(4) td:nth-of-type(0)",
+   "licensee" => "#table.details tr:nth-of-type(5) td:nth-of-type(0)",
+}
+
   base_url = "http://www.northshorecity.govt.nz/Foodgrading/foodgrading_search.asp"
   puts "Base URL: #{base_url}"
   content = `curl --no-keepalive #{base_url}`
