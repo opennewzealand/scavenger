@@ -1,13 +1,25 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-auckland_rating_address:
+auckland_rating_name:
   name: address
-  css: address_css
-  data_type: text
-  dataset: auckland
-
-auckland_rating_rating:
-  name: rating
-  css: rating_cs
+  css: "#mainSectionContentArea table h3"
   data_type: string
   dataset: auckland
+
+auckland_rating_address:
+  name: address
+  css: "#mainSectionContentArea table tr:nth-of-type(1) td:nth-of-type(1)"
+  data_type: text
+  dataset_id: 1
+
+auckland_rating_rating:
+  name: grade
+  css: "#mainSectionContentArea table h1"
+  data_type: string
+  dataset_id: 1
+  
+auckland_rating_inspection_date:
+  name: last_inspection_date
+  css: "#mainSectionContentArea table tr:nth-of-type(3) td:nth-of-type(1)"
+  data_type: date
+  dataset_id: 1
